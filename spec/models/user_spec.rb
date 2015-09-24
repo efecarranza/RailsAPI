@@ -45,7 +45,7 @@ RSpec.describe User, type: :model do
       @user.destroy
       products.each do |product|
         expect(Product.find(product)).to raise_error ActiveRecord::RecordNotFound
-      end
+        endgit
     end
   end
 end
